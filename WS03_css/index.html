@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced CSS</title>
+        <style>
+            .transition-button {
+                background-color: lightseagreen;
+                padding: 10px 20px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+            .transition-button:hover {
+                background-color: lightcoral;
+            }
+            .animation-box {
+                width: 50px;
+                height: 50px;
+                background-color: lightcyan;
+                position: relative;
+                animation: move 2s infinite alternate;
+            }
+            @keyframes move {
+                from {
+                    left: 0;
+                }
+                to {
+                    left: 100px;
+                }
+            }
+            .pseudo-list li:nth-child(odd) {
+                background-color: aquamarine;
+            }
+            .pseudo-list li:nth-child(even) {
+                background-color: cornflowerblue;
+            }
+            .filter-image {
+                filter: grayscale(100%);
+                transition: filter 0.3s ease;
+            }
+            .filter-image:hover {
+                filter: grayscale(0%);
+            }
+            .quote {
+                position:relative;
+                padding-left: 20px;
+                font-style: italic;
+            }
+            .quote::before {
+                content: '"';
+                font-size: 40px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: lightslategrey
+            }
+        </style>
+    </head>
+    <body>
+        <button class="transition-button">You won't be led anywhere new by clicking this</button><br><br>
+        <div class="animation-box"></div><br><br>
+        <ul class="pseudo-list">
+            <li>Cellar door</li>
+            <li>Obscure sorrows</li>
+            <li>Occhiolism</li>
+            <li>Waldosia</li>
+        </ul>
+        <img src="./images/wearestarlings0.webp" alt="A painting of starlings on a colourful sky" class="filter-image">
+        <blockquote class="quote">
+            Evertheless<br>
+            n.the fear that this is ultimately as good as your life is ever going to get—that the ebb and flow of your fortunes is actually just now hitting its high-water mark,<br>
+            and soon enough you’ll sense the tide of life slowly begin to recede.<br>
+            From ever + nevertheless. <br>
+            Pronounced “ev-er-thuh-les.”
+        </blockquote>
+    </body>
+</html>
