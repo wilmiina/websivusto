@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Layout techniques</title>
+        <style>
+            .flex-container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            .box {
+                background-color: mediumvioletred;
+                padding: 20px;
+                text-align: center;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+            }
+            .grid-item {
+                background-color: mediumseagreen;
+                padding: 20px;
+                text-align: center;
+            }
+            .responsive-box {
+                padding: 20px;
+                text-align: center;
+            }
+            @media (max-width: 600px) {
+                .responsive-box {
+                    background-color: mediumturquoise;
+                }
+            }
+            @media (min-width: 601px) {
+                .responsive-box {
+                    background-color: lightcyan;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Hilpeä höpöttelijä</h1>
+            <nav>
+                <ul>
+                    <li><a href="#kuka">Kuka</a></li>
+                    <li><a href="#kenen">Kenen</a></li>
+                    <li><a href="millainen">Millainen</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <main>
+            <section id="aiheesta">
+                <h2>Aiheesta että</h2>
+                <p>Tässä olisi aihetta aiheen perään. Kerrassaan.</p>
+                <p>Huhhuh siis nimittäin.</p>
+                <p>Huhhhuh.</p>
+            </section>
+        </main>
+        <br><br>
+        <div class="flex-container">
+            <div class="box">Tirppa</div>
+            <div class="box">Kurppa</div>
+            <div class="box">Hörppä</div>
+        </div>
+        <br><br>
+        <div class="grid-container">
+            <div class="grid-item">Haha</div>
+            <div class="grid-item">Hihi</div>
+            <div class="grid-item">Hehe</div>
+            <div class="grid-item">Hoho</div>
+            <div class="grid-item">Huhhuh</div>
+            <div class="grid-item">Höh</div>
+        </div>
+        <br><br>
+        <div class="responsive-box">Arvaa vaan miten voi käydä jos vähän liikuttelet ikkunaa, arvaa vaan!</div>
+        <br><br>
+        <footer>
+            <p>Tää on tehty just tänään 2025</p>
+        </footer>
+    </body>
+</html>
