@@ -1,0 +1,90 @@
+.responsive-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    color: azure;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+}
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+.media-query-box {
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .media-query-box {
+        background-color: darkmagenta;
+    }
+}
+@media (min-width: 601px) {
+    .media-query-box {
+        background-color: violet;
+    }
+} 
+
+/* General navigation styling */
+.responsive-nav {
+    background-color: darkgreen;
+    color: lightblue;
+    padding: 10px;
+}
+.responsive-nav .menu-toggle {
+    display: none;
+    background-color: lightcyan;
+    color: mediumpurple;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+.responsive-nav .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.responsive-nav .nav-list li {
+    margin: 0;
+}
+.responsive-nav .nav-list li a {
+    color: lightsteelblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.responsive-nav .nav-list li a:hover {
+    background-color: darkolivegreen;
+    border-radius: 5px;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 600px) {
+    .responsive-nav .menu-toggle {
+        display: block;
+    }
+    .responsive-nav .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: mediumvioletred;
+        width: 100%;
+    }
+    .responsive-nav .nav-list.active {
+        display: flex;
+    }
+    .responsive-nav .nav-list li {
+        text-align: center;
+    }
+}

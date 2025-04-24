@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Responsive Design</title>
+    </head>
+<body>
+    <div class="responsive-container">
+        <div class="column">Tolppa</div>
+        <div class="column">Kaikenlaisia tolppia</div>
+    </div>
+    <br>
+    <nav class="responsive-nav">
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        <ul class="nav-list">
+            <li><a href="#">Koto</a></li>
+            <li><a href="#">Mepä</a></li>
+            <li><a href="#">Sepä</a></li>
+        </ul>
+    </nav>
+    <br>
+    <img src="./images/columns.jpg" alt="Colourful columns side by side" class="responsive-image">
+    <br><br>
+    <div class="media-query-box">Avaruuden ikkuna</div>
+    <script>
+        function toggleMenu() {
+            const navList = document.querySelector('.responsive-nav .nav-list');
+            navList.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
