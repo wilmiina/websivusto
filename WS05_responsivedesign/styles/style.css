@@ -1,3 +1,10 @@
+header {
+    background-color: violet;
+    color: aliceblue;
+    font-size: x-large;
+    text-align: center;
+}
+
 .responsive-container {
     display: flex;
     flex-wrap: wrap;
@@ -87,4 +94,10 @@
     .responsive-nav .nav-list li {
         text-align: center;
     }
+}
+footer {
+    background-color: black;
+    color: chartreuse;
+    text-align: right;
+    font-size: smaller;
 }
