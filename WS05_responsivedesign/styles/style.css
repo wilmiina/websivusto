@@ -1,10 +1,28 @@
-header {
-    background-color: violet;
-    color: aliceblue;
-    font-size: x-large;
-    text-align: center;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    background-color: violet;
+}
+header h1 {
+    color: aliceblue;
+    font-size: 2rem;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
 .responsive-container {
     display: flex;
     flex-wrap: wrap;
@@ -44,14 +62,18 @@ header {
     background-color: darkgreen;
     color: lightblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .responsive-nav .menu-toggle {
     display: none;
     background-color: lightcyan;
     color: mediumpurple;
     border: none;
-    padding: 10px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 20px;
     cursor: pointer;
     width: 100%;
     text-align: left;
@@ -95,9 +117,41 @@ header {
         text-align: center;
     }
 }
+.nav-list a {
+    text-decoration: none;
+    color: blueviolet;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+.nav-list a:hover {
+    background-color: lightseagreen;
+}
+.nav-list a.active {
+    background-color: lightpink;
+    color: darkmagenta;
+    font-weight: bold;
+}
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 10px;
+}
+.image-column {
+    flex: 1;
+    text-align: center;
+}
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 footer {
     background-color: black;
     color: chartreuse;
     text-align: right;
+    padding: 10px;
     font-size: smaller;
 }

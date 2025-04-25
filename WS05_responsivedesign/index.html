@@ -7,30 +7,45 @@
         <title>Responsive Design</title>
     </head>
 <body>
-    <header>Meillä on muuten kaikenlaisia tolppia täällä</header><br>
-    <div class="responsive-container">
+    <header>
+        <h1>Meillä on muuten kaikenlaisia tolppia täällä</h1><br>
+        <nav class="responsive-nav">
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+            <ul class="nav-list">
+                <li><a href="#">Koto</a></li>
+                <li><a href="#">Mepä</a></li>
+                <li><a href="#">Sepä</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section class="responsive-container">
         <div class="column">Tolppa</div>
         <div class="column">Kaikenlaisia tolppia</div>
+    </section>
+    <br>
+    <section class="image-section">
+    <div class="image-column">
+        <img src="./images/columns.jpg" alt="Colourful columns side by side1" class="responsive-image">
     </div>
-    <br>
-    <nav class="responsive-nav">
-        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-        <ul class="nav-list">
-            <li><a href="#">Koto</a></li>
-            <li><a href="#">Mepä</a></li>
-            <li><a href="#">Sepä</a></li>
-        </ul>
-    </nav>
-    <br>
-    <img src="./images/columns.jpg" alt="Colourful columns side by side" class="responsive-image">
+    <div class="image-column">
+        <img src="./images/columns.jpg" alt="Colourful columns side by side2" class="responsive-image">
+    </div>
+    <div class="image-column">
+        <img src="./images/columns.jpg" alt="Colourful columns side by side3" class="responsive-image">
+    </div>
+    </section>
     <br><br>
-    <div class="media-query-box">Avaruuden ikkuna</div>
+    <section class="media-query-box">Avaruuden ikkuna</section><br>
+    </main>
+    <footer>
+        <p>&hearts; Kiitos huomiostanne</p>
+    </footer>
     <script>
         function toggleMenu() {
             const navList = document.querySelector('.responsive-nav .nav-list');
             navList.classList.toggle('active');
         }
-    </script><br>
-    <footer>Kiitos huomiostanne</footer>
+    </script>
 </body>
 </html>
