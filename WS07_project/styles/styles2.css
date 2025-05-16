@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(221, 7, 161);
+}
+
+h1 {
+    font-family: cursive;
+    text-align: center;
+    color: rgb(33, 66, 33)
+}
+
+h2 {
+    font-family: fantasy;
+    color: rgb(190, 72, 249);
+}
+
+h3 {
+    font-family: monospace;
+    color: deeppink;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: end;
+    color: turquoise;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
